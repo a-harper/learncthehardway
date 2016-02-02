@@ -1,0 +1,40 @@
+5a6
+> /** Our old friend die from ex17. */
+11c12
+< 		printf("ERROR %s\n", message);
+---
+>         printf("ERROR: %s\n", message);
+19d19
+< 
+22,23c22,25
+< // Classlic bubble sort that uses compare_cb to do the sorting
+< 
+---
+> /**
+>  * A classic bubble sort function that uses the 
+>  * compare_cb to do the sorting. 
+>  */
+37c39
+< 			if(cmp(target[j], target[j+1] > 0)) {
+---
+>             if(cmp(target[j], target[j+1]) > 0) {
+43a46
+> 
+66,67c69,72
+< // Used to test that we are sorting correctly
+< 
+---
+> /** 
+>  * Used to test that we are sorting things correctly
+>  * by doing the sort and printing it out.
+>  */
+73c78
+< 	if(!sorted) die("Failed to sort as requested");
+---
+>     if(!sorted) die("Failed to sort as requested.");
+82a88
+> 
+92c98
+< 	if(!numbers) die("Memory error");
+---
+>     if(!numbers) die("Memory error.");
